@@ -7,8 +7,8 @@
 <% @ideas.each do |idea| %>
 <div class = "idea">
 	<strong> <%= idea.title %> </strong> 
-	<%= idea.text %>
-	<%= idea.votes %>
+	<%= idea.text %> //
+	<%= idea.votes %> //
 	<%= link_to "Upvote", upvote_path(idea) %>
 </div>
 <% end %>
