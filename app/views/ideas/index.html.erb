@@ -1,0 +1,11 @@
+<!-- app/views/ideas/index.html.erb -->
+<%= link_to "New Idea", new_idea_path %>
+
+<% @ideas.each do |idea| %>
+<div class = "idea">
+	<strong> <%= idea.title %> </strong> 
+	<%= idea.text %>
+	<%= idea.votes %>
+	<%= link_to "Upvote", upvote_path(idea) %>
+</div>
+<% end %>
